@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import br.com.antonina.toca.dto.CategoryDTO;
 import br.com.antonina.toca.entities.Category;
 import br.com.antonina.toca.repositories.CategoryRepository;
+import br.com.antonina.toca.services.exceptions.EntityNotFoundExecption;
 
 @Service
 public class CategoryService {
@@ -36,7 +37,7 @@ public class CategoryService {
 	 */
 	public CategoryDTO findById(Long id) {
 		Optional<Category> obj = repository.findById(id);
-		Category entity = obj.get();
+		Category entity = obj.orElseThrow(() -> new EntityNotFoundExecption("Categoria não encontrada"));
 		return new CategoryDTO(entity);
 	}
 }
