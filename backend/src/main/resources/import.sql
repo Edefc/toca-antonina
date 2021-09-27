@@ -38,7 +38,8 @@ INSERT INTO tb_product (name, average_price, small_price, date, description, img
 
 
 INSERT INTO tb_product_category (product_id, category_id) VALUES (1, 1);
-INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 1);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 2);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 1);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (4, 1);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (5, 1);
