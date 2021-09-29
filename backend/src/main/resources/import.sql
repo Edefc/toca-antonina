@@ -70,3 +70,11 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (29, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (30, 4);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (31, 4);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (32, 4);
+
+INSERT INTO tb_order(order_status, latitude, longitude, moment) VALUES (0, 213123, 12323, NOW());
+INSERT INTO tb_order(order_status, latitude, longitude, moment) VALUES (1, 3453453, 3534534, NOW());
+
+INSERT INTO tb_product_order (product_id, order_id) VALUES (1, 1);
+INSERT INTO tb_product_order (product_id, order_id) VALUES (2, 1);
+INSERT INTO tb_product_order (product_id, order_id) VALUES (2, 2);
+INSERT INTO tb_product_order (product_id, order_id) VALUES (2, 3);
